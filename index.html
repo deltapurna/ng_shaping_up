@@ -9,8 +9,7 @@
     <h2 class="text-center">- an Angular store -</h2>
     <ul class="list-group">
       <li class="list-group-item" ng-repeat="product in store.products | orderBy:'-price'">
-        <h3 ng-include="'product-title.html'">
-        </h3>
+        <product-title></product-title>
         <img class="center-block" ng-src="{{ product.images[0].full }}"/>
         <section ng-controller="PanelController as panel">
           <ul class="nav nav-pills">
